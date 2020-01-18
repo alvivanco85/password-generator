@@ -67,7 +67,8 @@ function getRandomNumber() {
 }
 
 function getRandomSymbol() {
-	return +String.fromCharCode(Math.floor(Math.random() * 16) + 32);
+	const symbols = "!@#$%^&*()";
+	return symbols[Math.floor(Math.random() * symbols.length)];
 }
 //copying to clipboard
 clipboard.addEventListener('click', () => {
