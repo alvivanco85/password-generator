@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 
 </head>
 <body>
@@ -23,14 +23,40 @@
             <div class="content">
                 <h2>Generate a Password</h2>
                 <br>
-                <input type="text" id="display">
+                <div class="result-container">
+                    <span id="result"></span>
+                </div>
                 <br>
-                <button onclick="">Generate Password</button>
-                <button onclick="">Copy to Clipboard</button>
+                <div class="settings">
+                    <div class="setting">
+                        <label>Password length</label>
+                        <input type="number" id="length" min='4' max='128' value='0' />
+                    </div>
+                    <div class="setting">
+                        <label>Include uppercase letters</label> 
+                        <input type="checkbox" id="uppercase" checked />
+                    </div>
+                    <div class="setting">
+                        <label>Include lowercase letters</label> 
+                        <input type="checkbox" id="lowercase" checked />
+                    </div>
+                    <div class="setting">
+                        <label>Include numbers</label> 
+                        <input type="checkbox" id="numbers" checked />
+                    </div>
+                    <div class="setting">
+                        <label>Include symbols</label> 
+                        <input type="checkbox" id="symbols" checked />
+                    </div>
+                <button onclick id="generate">Generate Password</button>
+                <button onclick id="clipboard">Copy to Clipboard</button>
             </div>
         </div>    
         </div>
     </div>
+<script src="script.js">
+
+</script>
 
 </body>
 </html>
