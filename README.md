@@ -4,4 +4,4 @@ This simple to use password genrator lets you create a random password with up t
 
 ## Github
 * https://alvivanco85.github.io/password-generator/
-![Password Generator Image](./passwordgenerator.png)
+![Password Generator Image](passwordgenerator.jpg)
